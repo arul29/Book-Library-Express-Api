@@ -1,6 +1,6 @@
-# Simple-REST-API-Node-Express-MySQL
+# Book-Library-Express-Api
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://nodejs.org/">
     <img title="Restful API" width='700' src="https://raw.githubusercontent.com/arul29/Simple-REST-API-Node-Express-MySQL/master/img/ExpressMySQL.jpg">
   </a>
@@ -14,8 +14,6 @@
   - [Dependencies](#dependencies)
   - [Aplication Structure](#aplication-Structure)
   - [API Docs](#api-docs)
-    <!-- - [Novel](#novel)
-    - [Genre](#genre) -->
 
 ## Build Setup
 
@@ -76,7 +74,7 @@ $ npm start
 | GET    | /book/filtergenre  | Show Book by Genre  | -                | -                                                                                                         | `title`:STRING `author`:STRING `genre`: INTEGER `status`:INTEGER |
 | POST   | /book/addbook      | Add New Book        | -                | `title`:STRING (Required) `author`:STRING (Required) `status`:STRING (Required) `genre`:STRING (Required) | -                                                                |
 | PUT    | /book/updatebook     | Update Book by Id   | -                | `title`:STRING (Required) `author`:STRING (Required) `status`:STRING (Required) `genre`:STRING (Required) | -                                                                |
-| DELETE | /book/deletebook     | Delete Book by Id   | -                | -                                                                                                         | -                       
+| DELETE | /book/deletebook     | Delete Book by Id   | -                | -                                                                                                         | -                        -->
 
 ---
 
