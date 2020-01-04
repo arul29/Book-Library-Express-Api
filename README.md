@@ -65,16 +65,22 @@ $ npm start
 
 ---
 
+-->
+
 ## API Docs
 
-| Method | Endpoint           | Description         | Request Param    | Request Body                                                                                              | Request Query                                                    |
-| ------ | ------------------ | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| GET    | /book              | Show All Book       | -                | -                                                                                                         | `title`:STRING `author`:STRING `genre`: INTEGER `status`:INTEGER |
-| GET    | /book/filterstatus | Show Book by Status | -                | -                                                                                                         | `title`:STRING `author`:STRING `genre`: INTEGER `status`:INTEGER |
-| GET    | /book/filtergenre  | Show Book by Genre  | -                | -                                                                                                         | `title`:STRING `author`:STRING `genre`: INTEGER `status`:INTEGER |
-| POST   | /book/addbook      | Add New Book        | -                | `title`:STRING (Required) `author`:STRING (Required) `status`:STRING (Required) `genre`:STRING (Required) | -                                                                |
-| PUT    | /book/updatebook     | Update Book by Id   | -                | `title`:STRING (Required) `author`:STRING (Required) `status`:STRING (Required) `genre`:STRING (Required) | -                                                                |
-| DELETE | /book/deletebook     | Delete Book by Id   | -                | -                                                                                                         | -                        -->
+| Method | Endpoint           | Description            | Request Param | Request Body                                                                                                                                                  | Request Query              |
+| ------ | ------------------ | ---------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| GET    | /book              | Show All Book          | -             | -                                                                                                                                                             | -                          |
+| GET    | /book/filterstatus | Show Book by Status    | -             | -                                                                                                                                                             | `status`:STRING (Required) |
+| GET    | /book/filtergenre  | Show Book by Genre     | -             | -                                                                                                                                                             | `genre`:STRING (Required)  |
+| POST   | /book/addbook      | Add New Book           | -             | `title`:STRING (Required) `author`:STRING (Required) `status`:STRING (Required) `genre`:STRING (Required) `url_img`:STRING (Required) `des`:STRING (Required) | -                          |
+| PUT    | /book/updatebook   | Update Book by Id      | -             | `title`:STRING (Required) `author`:STRING (Required) `status`:STRING (Required) `genre`:STRING (Required)                                                     | `id`:NUMBER (Required)     |
+| DELETE | /book/deletebook   | Delete Book by Id      | -             | -                                                                                                                                                             | `id`:NUMBER (Required)     |
+| POST   | /user/register     | Register User          | -             | `email`:STRING (Required) `password`:STRING (Required) `name`:STRING (Required)                                                                               | -                          |
+| POST   | /user/login        | Login User             | -             | `email`:STRING (Required) `password`:STRING (Required)                                                                                                        | -                          |
+| POST   | /book/addwishlist  | Add Wishlist Book User | -             | `id_book`:NUMBER (Required) `id_user`:NUMBER (Required)                                                                                                       | -                          |
+| POST   | /book/addborrow    | Add Borrow Book User   | -             | `id_book`:NUMBER (Required) `id_user`:NUMBER (Required)                                                                                                       | -                          |
 
 ---
 
