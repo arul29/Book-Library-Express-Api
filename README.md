@@ -1,58 +1,92 @@
 # Book-Library-Express-Api
 
-<!-- <p align="center">
-  <a href="https://nodejs.org/">
-    <img title="Restful API" width='700' src="https://raw.githubusercontent.com/arul29/Simple-REST-API-Node-Express-MySQL/master/img/ExpressMySQL.jpg">
-  </a>
-</p>
+Book Library API Nodejs Express
+
+[Link Host](http://nameless-plateau-17084.herokuapp.com/book/)
+
+<!-- Related project : [Hime Restaurant Point Of Sales Frontend](https://github.com/iyansr/hime-restaurant) -->
+
+<div align='center'>
+  <img src='https://raw.githubusercontent.com/arul29/Simple-REST-API-Node-Express-MySQL/master/img/ExpressMySQL.jpg' width='800'  />
+</div>
+
+---
 
 ## Table Of Contents
 
-  - [Table Of Content](#table-of-content)
-  - [Build Setup](#build-setup)
-  - [Stacks](#stacks)
-  - [Dependencies](#dependencies)
-  - [Aplication Structure](#aplication-Structure)
-  - [API Docs](#api-docs)
+- [Table Of Content](#table-of-content)
+- [Features](#features)
+- [Build Setup](#build-setup)
+- [Stacks](#stacks)
+- [Dependencies](#dependencies)
+- [Aplication Structure](#aplication-Structure)
+- [API Docs](#api-docs)
+  <!-- - [Novel](#novel)
+  - [Genre](#genre) -->
+
+## Features
+
+- List Book
+- CRUD Book
+- Borrow/Return Book
+- History Borrow
+- Wishlist Book
+- Login with JWT
 
 ## Build Setup
 
-<h3>Install depedencies</h3>
+- Clone Repository
+  `https://github.com/arul29/Book-Library-Express-Api.git`
 
-```bash
-# with npm
-$ npm install
-```
+- Make the `.env` file
 
-<h3>Setup your environment variable (&nbsp <i>.env</i>&nbsp ).</h3>
+  ```env
+  DB_HOST =
+  DB_USER =
+  DB_PASSWORD =
+  DB_DATABASE =
 
-```env
-DB_HOST      = 'yourDBhost'
-DB_USER      = 'yourDBuser'
-DB_PASSWORD  = 'yourDBpass'
-DB_DATABASE  = 'yourDBname'
-```
+  CLOUDINARY_CLOUD_NAME =
+  CLOUDINARY_API_KEY =
+  CLOUDINARY_API_SECRET =
 
-<h3>Start API server</h3>
+  SECRET_KEY =
+  ```
 
-```bash
-$ npm start
-```
+* Install Dependencies
+
+  ```bash
+  # with yarn
+  $ yarn install
+
+  # or with npm
+  $ npm install
+  ```
+
+* Run Server
+
+  ```bash
+  # with npm
+  $ npm start
+  ```
+
+* Server will running on port `8000`
 
 ## Stacks
 
-- NodeJS
+- Node JS
+- Express
 - MySQL
-- ExpressJS
 
 ## Dependencies
 
-- [expressjs](https://www.npmjs.com/package/express) - The server for handling and routing HTTP requests
-- [morgan](https://www.npmjs.com/package/morgan) - a HTTP request logger middleware for Node.js. It simplifies the process of logging requests to your application
-- [dotenv](https://www.npmjs.com/package/dotenv) - is a zero-dependency module that loads environment variables from a `.env` file into `process.env`
-- [mysql](https://www.npmjs.com/package/mysql) - NodeJs driver for MySQL
-- [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware
-- [nodemon](https://www.npmjs.com/package/nodemon) - is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+- multer
+- cloudinary
+- jsonwebtoken
+- cors
+- nodemon
+- dontenv
+- bcryptjs
 
 ## Aplication Structure
 
@@ -64,8 +98,6 @@ $ npm start
 - `src/Controllers` - This folder contain configuration files that links Models to Route
 
 ---
-
--->
 
 ## API Docs
 
